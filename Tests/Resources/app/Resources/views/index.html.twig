@@ -1,0 +1,16 @@
+{% extends "CmfTestingBundle::layout.html.twig" %}
+{% block content %}
+<div class="row">
+    <div class="span6">
+        <p>This is a really simple POC for a self-expositing bundle test application.</p>
+    </div>
+
+    <div class="span6 accordion" id="cmf_testing_accordion">
+        {{ cmf_testing_expose('@CmfTestingBundle/Tests/Resources/app/Resources/views/index.html.twig')|raw }}
+
+        {{ cmf_testing_expose('@CmfTestingBundle/Tests/Resources/Controller/TestingController.php')|raw }}
+
+        {{ cmf_testing_expose('@CmfTestingBundle/Tests/WebTest/App/TestingControllerTest.php')|raw }}
+    </div>
+</div>
+{% endblock %}

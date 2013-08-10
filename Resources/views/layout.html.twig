@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ asset('bundles/cmftesting/components/highlightjs/styles/github.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/cmftesting/components/bootstrap/css/bootstrap.css') }}" />
+
+        <script src="{{ asset('bundles/cmftesting/components/highlightjs/highlight.pack.js') }}"></script>
+        <script src="{{ asset('bundles/cmftesting/components/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('bundles/cmftesting/components/bootstrap/js/bootstrap.js') }}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>       
+    </head>
+    <title>{{ cmf_testing_config.title }}</title>
+    <body>
+        <h1>{{ cmf_testing_config.title }}</h1>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

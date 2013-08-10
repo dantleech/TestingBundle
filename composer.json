@@ -1,0 +1,26 @@
+{
+    "name": "dantleech/testing-bundle",
+    "description": "Testing bundle",
+    "require": {
+        "symfony-cmf/testing": "dev-master",
+        "components/bootstrap": "dev-master",
+        "components/highlightjs": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "config": {
+        "component-dir": "Resources/public/components"
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Symfony/Cmf/Bundle/TestingBundle",
+    "autoload":{
+        "psr-0":{
+            "Symfony\\Cmf\\Bundle\\TestingBundle": ""
+        }
+    }
+}

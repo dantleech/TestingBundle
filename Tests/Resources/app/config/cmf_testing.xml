@@ -1,0 +1,8 @@
+<container xmlns="http://symfony.com/schema/dic/services">
+
+    <config xmlns="http://cmf.symfony.com/schema/dic/testing">
+        <app title="Testing Bundle Test Application"/>
+    </config>
+
+</container>
+

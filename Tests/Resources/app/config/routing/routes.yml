@@ -1,0 +1,4 @@
+index:
+    pattern: /
+    defaults:
+        _controller: Symfony\Cmf\Bundle\TestingBundle\Tests\Resources\Controller\TestingController::indexAction

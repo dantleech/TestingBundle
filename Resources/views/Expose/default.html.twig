@@ -1,0 +1,12 @@
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cmf_testing_accordion" href="#collapse_{{ uid }}" title="{{ filename }}">{{ basename }}</a>
+    </div>
+    <div class="accordion-body collapse" id="collapse_{{ uid }}">
+        <div class="accordion-inner">
+            <pre><code>{% spaceless %}
+            {{ content }}
+            {% endspaceless %}</code></pre>
+        </div>
+    </div>
+</div>
